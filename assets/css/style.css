@@ -1,0 +1,154 @@
+/* CSS style and reset link to game.js */
+
+*{
+	box-sizing: border-box;
+	vertical-align: middle;
+}
+
+@font-face {
+  font-family: 'pokemon-font';
+  src: url('../fonts/pokemon-font.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/pokemon-font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/pokemon-font.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/pokemon-font.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/pokemon-font.ttf')  format('truetype') /* Safari, Android, iOS */
+  /* There is no SVG version of this font due to support being dropped in SVG 2 */
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	position: fixed;
+	background-image: url("images/background.jpg");
+	background-color: silver;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'pokemon-font';
+
+}
+
+
+div#wrapperHeader {
+ width:100%;
+ height:200px; 
+ text-align:center;
+}
+
+div#wrapperHeader div#header {
+ width:100%;
+ height:200px;
+ margin:0 auto;
+}
+
+div#wrapperHeader div#header img {
+ width:550px; /* the width of the logo image */
+ height:200px; /* the height of the logo image */
+ margin:0 auto;
+}
+
+h1 {
+	display: inline-block;
+}
+
+.wrapper {
+	text-align: center;
+	margin-top: 60px;
+	position: relative;
+	text-align: center;
+	overflow: auto;
+	height: 90%;
+	font-size: 50px;
+}
+
+
+.hangman {
+	position: relative;
+	display: block;
+	width: 45%;
+	margin: auto;
+	float: right;
+}
+
+.hangman > img {
+	position: absolute;
+	max-height: 380px;
+	top:0;
+	left: 0;
+}
+
+.info {
+	position: relative;
+	display: block;
+	width: 50%;
+	float: left;
+	line-height: 120%;
+}
+
+.answer {
+	top: 0;
+	right: 0;
+	position: absolute;
+}
+
+.red {
+	color: red;
+}
+
+.pokeball {
+	color: red;
+	font-style: bold;
+}
+
+.yellow {
+	color: gold;
+	font-size: 80%;
+}
+
+.losses {
+	color: blue;
+	font-size: 70%;
+}
+
+.word {
+	color: black;
+}
+
+.tries {
+	color: red;
+	font-size: 50%;
+	margin-right: 240px;
+}
+
+.answersGuessed {
+	color: black;
+	font-size: 50%;
+	margin-right: 285px;
+}
+
+.word > h1, .black > h1 {
+	display: block;
+}
+
+.letter-guessed {
+	margin-left: 40px;
+}
+
+button {
+  background-image: url("images/pokeball.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  /* put the height and width of your image here */
+  height: 50px;
+  width: 200px;
+  border: none;
+}
+
+button span {
+  display: none;
+}
+
